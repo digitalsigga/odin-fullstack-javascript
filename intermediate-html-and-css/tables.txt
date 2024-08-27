@@ -1,0 +1,152 @@
+Summary: HTML Tables Basics
+Overview: HTML tables are used to present tabular data in a structured format of rows and columns. They are suitable for displaying data like schedules or comparative information. HTML provides various tags and attributes to create, style, and manage tables effectively.
+
+Creating a Basic Table:
+
+Basic Structure: Use <table> to define the table. Rows are created with <tr>, and cells within rows are created with <td> for data and <th> for headers.
+Example:
+html
+
+<table>
+  <tr>
+    <td>Cell 1</td>
+    <td>Cell 2</td>
+  </tr>
+  <tr>
+    <td>Cell 3</td>
+    <td>Cell 4</td>
+  </tr>
+</table>
+Table Headers:
+
+Use <th> to create header cells that stand out and define the type of data in a column or row. Headers are bold and centered by default.
+Example:
+html
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Chris</td>
+    <td>38</td>
+  </tr>
+</table>
+Spanning Rows and Columns:
+
+colspan: Allows a cell to span multiple columns.
+rowspan: Allows a cell to span multiple rows.
+Example:
+html
+
+<table>
+  <tr>
+    <td colspan="2">Spanning Column</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Spanning Row</td>
+    <td>Cell 2</td>
+  </tr>
+  <tr>
+    <td>Cell 3</td>
+  </tr>
+</table>
+Styling Tables:
+
+Basic styling is applied using CSS. The <col> and <colgroup> elements help style entire columns efficiently.
+Example:
+html
+
+<table>
+  <colgroup>
+    <col style="background-color: yellow">
+    <col style="background-color: lightblue">
+  </colgroup>
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+  </tr>
+</table>
+
+
+Advanced Features of HTML Tables
+Adding a Caption with <caption>
+
+The <caption> element provides a description for a table, making it easier for users to understand the context of the table. It is placed immediately after the <table> opening tag.
+Example:
+html
+Copy code
+<table>
+  <caption>Dinosaurs in the Jurassic period</caption>
+  <!-- Table content here -->
+</table>
+Table Structure with <thead>, <tbody>, and <tfoot>
+
+<thead>: Wraps the header rows.
+<tbody>: Contains the main table content.
+<tfoot>: Wraps the footer rows, useful for summarizing data.
+Example:
+html
+Copy code
+<table>
+  <thead>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Row 1 Data 1</td>
+      <td>Row 1 Data 2</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="2">Footer Information</td>
+    </tr>
+  </tfoot>
+</table>
+Nesting Tables
+
+You can nest tables within cells of another table, though this is generally discouraged as it can complicate accessibility and styling.
+Example:
+html
+Copy code
+<table>
+  <tr>
+    <td>
+      <table>
+        <tr><td>Nested Table Cell</td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+Accessibility Features for Tables
+Using Column and Row Headers
+
+<th> Elements: Used for headers in tables, providing context for data cells.
+Scope Attribute: Defines whether a header is for a column, row, or a group of columns/rows.
+Example:
+html
+Copy code
+<th scope="col">Column Header</th>
+<th scope="row">Row Header</th>
+<th scope="colgroup">Column Group Header</th>
+<th scope="rowgroup">Row Group Header</th>
+Using id and headers Attributes
+
+id: Assigns a unique identifier to <th> elements.
+headers: Associates cells with their headers by referencing the id of the headers.
+Example:
+html
+Copy code
+<th id="header1">Header 1</th>
+<td headers="header1">Data</td>
+
+
+When Not to Use Tables:
+
+Avoid using tables for layout purposes. They should only be used for tabular data. CSS should be used for layout to ensure better accessibility and maintainability.
+Conclusion: Understanding and using HTML tables properly can help display data clearly and efficiently. For advanced table features and accessibility improvements, additional learning is required beyond these basics.

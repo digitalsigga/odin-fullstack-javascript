@@ -1,0 +1,29 @@
+Summary of SVGs in HTML and CSS
+What Are SVGs?
+
+SVG stands for Scalable Vector Graphics.
+SVGs are vector graphics defined by mathematical formulas, not pixels. This allows them to scale to any size without losing quality or increasing file size.
+They are used for icons, charts, simple images, backgrounds, and applying effects with filters.
+Advantages of SVGs:
+
+Scalability: Retain quality at any size.
+Editability: Can be styled and manipulated with CSS and JavaScript.
+XML Format: Human-readable and can be directly embedded into HTML.
+Drawbacks of SVGs:
+
+Complexity: Inefficient for detailed or photo-realistic images. Large, complex SVGs can slow down page loading and are not suitable for high-detail images.
+Anatomy of an SVG:
+
+xmlns: Specifies the XML namespace for SVG.
+viewBox: Defines the coordinate system and aspect ratio.
+class, id: Used for styling and targeting elements.
+Basic elements: <circle>, <rect>, <path>, and <text>.
+Embedding SVGs:
+
+Linked SVGs: Use <img> or background-image in CSS. Simple and cacheable, but less flexible.
+Inline SVGs: Paste SVG code directly into HTML for dynamic control with CSS/JavaScript. This can make your code less readable and affect caching.
+Choosing the Method:
+
+Linking is cleaner and simpler.
+Inlining provides more control for customization but can complicate your code and affect performance.
+Use SVGs when you need scalable, high-quality graphics, but choose the embedding method based on your needs for flexibility and code management.

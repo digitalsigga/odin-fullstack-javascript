@@ -1,0 +1,58 @@
+
+Emmet is a powerful plugin that allows you to write HTML and CSS code faster and more efficiently. 
+It uses abbreviations to generate code snippets, saving you time and reducing the amount of typing you need to do.
+
+Here's a cheat sheet for some commonly used Emmet abbreviations:
+
+! - Generates the basic HTML structure with <!DOCTYPE html> and <html>, <head>, and <body> tags.
+div - Creates a <div> element.
+p - Creates a <p> element.
+ul - Creates an unordered list <ul> with list items <li>.
+ol - Creates an ordered list <ol> with list items <li>.
+a - Creates an anchor <a> element.
+img - Creates an image <img> element.
+input - Creates an input field <input>.
+class - Adds a class attribute to an element.
+id - Adds an id attribute to an element.
+> - Child combinator, creates a nested element.
++ - Adjacent sibling combinator, creates a sibling element.
+* - Multiplication operator, duplicates the element.
+
+
+1. Wrap with Abbreviation:
+Step 1: Select the text you want to wrap.
+Step 2: Press Ctrl + Shift + P (or Cmd + Shift + P on Mac) to open the command palette.
+Step 3: Type "Emmet: Wrap with Abbreviation" and select it.
+Step 4: Type the abbreviation, like div or any other tag, and press Enter.
+Example: If you type div and press Enter, your selected text will be wrapped in a <div> tag.
+
+2. Remove Tag:
+Step 1: Place your cursor inside the HTML tag you want to remove.
+Step 2: Press Ctrl + Shift + P (or Cmd + Shift + P on Mac) to open the command palette.
+Step 3: Type "Emmet: Remove Tag" and select it.
+
+
+Emmet Cheat Sheet :
+
+https://docs.emmet.io/cheat-sheet/
+
+
+1. Why should you use Emmet?
+Emmet speeds up HTML and CSS coding by expanding short abbreviations into full code snippets, saving time and reducing errors.
+
+2. What are some useful Emmet abbreviations?
+ul>li*5: Creates a ul with 5 li items.
+div#container: Creates a div with an id of "container".
+a[href="#"]: Creates an anchor tag with an href attribute set to "#".
+3. What syntax would you use to create the element <p class="text"></p>?
+p.text expands to <p class="text"></p>.
+
+4. What syntax expands to an element with a child element inside of it?
+div>p expands to <div><p></p></div>.
+
+5. What syntax would you use to create three elements that have the same class name?
+.class-name*3 expands to three elements with the same class, like <div class="class-name"></div> repeated three times.
+
+
+These are just a few examples, and there are many more abbreviations and features available in Emmet. Using these shortcuts can greatly speed up your coding workflow.
+
