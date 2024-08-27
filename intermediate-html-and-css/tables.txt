@@ -76,7 +76,7 @@ Adding a Caption with <caption>
 The <caption> element provides a description for a table, making it easier for users to understand the context of the table. It is placed immediately after the <table> opening tag.
 Example:
 html
-Copy code
+
 <table>
   <caption>Dinosaurs in the Jurassic period</caption>
   <!-- Table content here -->
@@ -88,7 +88,7 @@ Table Structure with <thead>, <tbody>, and <tfoot>
 <tfoot>: Wraps the footer rows, useful for summarizing data.
 Example:
 html
-Copy code
+
 <table>
   <thead>
     <tr>
@@ -113,7 +113,7 @@ Nesting Tables
 You can nest tables within cells of another table, though this is generally discouraged as it can complicate accessibility and styling.
 Example:
 html
-Copy code
+
 <table>
   <tr>
     <td>
@@ -130,7 +130,7 @@ Using Column and Row Headers
 Scope Attribute: Defines whether a header is for a column, row, or a group of columns/rows.
 Example:
 html
-Copy code
+
 <th scope="col">Column Header</th>
 <th scope="row">Row Header</th>
 <th scope="colgroup">Column Group Header</th>
@@ -141,7 +141,7 @@ id: Assigns a unique identifier to <th> elements.
 headers: Associates cells with their headers by referencing the id of the headers.
 Example:
 html
-Copy code
+
 <th id="header1">Header 1</th>
 <td headers="header1">Data</td>
 
