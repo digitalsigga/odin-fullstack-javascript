@@ -1,0 +1,82 @@
+CSS Units Study Notes
+
+1. Unit Types in CSS
+Absolute Units: Fixed sizes that don't change relative to anything else.
+Relative Units: Sizes that adapt based on the context they are used in.
+
+2. Absolute Units
+px (Pixels): The only absolute unit recommended for web use. Its size is fixed and doesn't change.
+Other Absolute Units: Units like inches (in) and centimeters (cm) are better suited for print media.
+
+3. Relative Units
+
+em:
+Refers to the font-size of an element (or its parent if used for font-size).
+Example: If an element's font-size is 16px, 4em would equal 64px (16px * 4).
+
+rem:
+Refers to the font-size of the root element (:root or html).
+The size remains consistent, independent of the parent’s font-size, which makes it more predictable than em.
+Recommended for defining font sizes to respect user preferences.
+
+4. Viewport Units
+vh (Viewport Height): 1vh equals 1% of the viewport's height.
+vw (Viewport Width): 1vw equals 1% of the viewport's width.
+
+Use Cases: Ideal for sizing elements relative to the entire viewport, such as full-screen sections or app-like interfaces.
+
+Line Height Units:
+
+lh: Relative to the line height of the element.
+rlh: Relative to the line height of the root element.
+
+Percentage Values:
+
+Percentages are relative to another value (e.g., width, font-size).
+
+
+https://codyloyd.com/2021/css-units/
+
+
+Why Use em or rem for Font-Size Instead of px?
+Using em or rem for font-size instead of px offers several benefits:
+
+Accessibility and User Preferences:
+
+Scaling with User Settings: em and rem units scale based on the user's browser settings. If a user has adjusted their default font size for better readability, elements sized with em or rem will respect those settings and scale accordingly. px units do not respond to these settings, potentially making text harder to read for users with visual impairments.
+Consistency Across Devices:
+
+Responsive Design: rem (root em) allows for consistent scaling across the entire site, making it easier to create a cohesive design that adapts to different screen sizes and resolutions. If the root font size is adjusted, all rem-based sizes will scale accordingly, ensuring that text remains proportionate on various devices.
+Ease of Maintenance:
+
+Relative Sizing: Using em and rem allows for more flexible and maintainable code. By defining a base font size in rem or em, you can adjust the entire site's typography by changing just one value, rather than updating multiple px values across your CSS.
+Instances Where You Might Want to Use vh and vw
+vh (viewport height) and vw (viewport width) units are relative to the size of the viewport (the visible area of the browser window). Here are some instances where these units are useful:
+
+Full-Page Layouts:
+
+Hero Sections: When creating a full-screen hero section at the top of a page, using 100vh for the height ensures the section always takes up the entire viewport height, regardless of the screen size.
+Responsive Typography:
+
+Dynamic Text Scaling: For responsive typography that scales with the viewport, you might use vw to ensure that text size adjusts as the browser window resizes. For example, 2vw would mean the font size is always 2% of the viewport width.
+Responsive Elements:
+
+Background Images or Elements: When you want an element to scale in proportion to the viewport size, vw and vh can be used. For instance, setting an image's width to 50vw will make it always take up 50% of the viewport width, providing a more fluid and adaptable design.
+Positioning Elements:
+
+Fixed Positioning Relative to the Viewport: For elements that need to be fixed at a certain position relative to the viewport, such as a floating navigation menu, vh and vw units can be used to position elements consistently, regardless of the screen size.
+Instances Where You Might Want to Use px Instead of a Relative Unit
+While em, rem, vh, and vw offer flexibility and responsiveness, there are scenarios where px is still the preferred choice:
+
+Pixel-Perfect Design:
+
+Precise Control: When you need exact control over an element's dimensions, such as in pixel-perfect designs where every pixel matters, using px ensures consistency across different devices and browsers.
+Images and Icons:
+
+Non-Scaling Elements: For elements like icons, borders, or small images that should remain a fixed size regardless of screen or font settings, px is often preferable to avoid unintended scaling that could distort the design.
+Fixed Layouts:
+
+Static Elements: In some cases, you may have a fixed layout, like a fixed-width sidebar, where the size should not change with different screen sizes or user settings. px provides the stability needed for such elements.
+Avoiding Complex Scaling Issues:
+
+Preventing Overflows or Layout Breaks: In complex layouts where scaling elements could lead to overflow or wrapping issues, using px can prevent these problems by keeping dimensions consistent.
